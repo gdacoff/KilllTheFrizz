@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Java-21_LTS-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" />
   <img src="https://img.shields.io/badge/JUnit_5-144_Passing-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="144 Passing Tests" />
   <br><br>
-  <img src="https://img.shields.io/badge/Status-Phase_7.10.9_Certified-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Beta_Version-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Zero--Allocation-Verified-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Source_Code-Proprietary-red?style=for-the-badge" />
 
