@@ -195,20 +195,14 @@ In accordance with strict engineering transparency, the following bounded behavi
 * **Repository Status:** This repository is **Open Source**, with Phases 7.1 through 7.10.9 (`SleepingEntities`, `VillagerBrainThrottler`, and `CollisionThrottler`) completed, audited, and verified. Future development (Phase 7.11+) is planned to investigate chunk and block-entity processing.
 * **License:** Formal open-source licensing terms have not yet been finalized. Until an explicit `LICENSE` file is added to the root directory, standard copyright protections apply.
 
+For orders, please contact:
+
 <!-- ССЫЛКИ НА СВЯЗЬ (скопированы из твоего профиля) -->
-
 <a href="https://discord.com/users/846024512611942401">
-
   <img src="https://img.shields.io/badge/Discord-8A2BE2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
-
 </a>
 
-
-
 ---
-
 <div align="center">
-
   <i>Designed with ❤️ by <b>KillerZero</b></i>
-
-</div> 
+</div>
