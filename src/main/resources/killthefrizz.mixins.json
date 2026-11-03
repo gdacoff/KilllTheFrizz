@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "io.github.gdacoff.killthefrizz.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MobMixin",
+    "LivingEntityMixin",
+    "VillagerMixin",
+    "BrainMixin",
+    "BrainAccessor",
+    "SensorAccessor",
+    "ExpirableValueAccessor"
+  ],
+  "client": [
+    "client.EntityRenderDispatcherMixin",
+    "client.BlockEntityRenderDispatcherMixin",
+    "client.ParticleEngineMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
