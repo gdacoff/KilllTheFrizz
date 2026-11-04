@@ -1,0 +1,166 @@
+{
+  "phase": "7.10.9",
+  "project": "KilllTheFrizz",
+  "minecraft_version": "1.21.1",
+  "neoforge_version": "21.1.265",
+  "base_commit": "eb2408b",
+  "source_constants": {
+    "STATIONARY_VELOCITY_SQR": 0.04,
+    "STAGGER_PERIOD": 2,
+    "PLAYER_PROXIMITY": 6.0,
+    "bytecode_verified": true
+  },
+  "workload_1_dense_250_cows": {
+    "description": "250 Cows in 5x5 Pen",
+    "repetitions": 5,
+    "push_entities_calls": {
+      "off_mean": 29174.20,
+      "off_sd": 10322.16,
+      "safe_mean": 13190.80,
+      "safe_sd": 3960.88,
+      "delta": -15983.40,
+      "delta_pct": -54.79,
+      "welch_t": 3.23,
+      "df": 5.2,
+      "p_value": 0.022,
+      "cohens_d": 2.04
+    },
+    "push_entities_time_ms": {
+      "off_mean": 48.84,
+      "off_sd": 1.96,
+      "safe_mean": 24.60,
+      "safe_sd": 3.88,
+      "delta": -24.24,
+      "delta_pct": -49.63,
+      "welch_t": 12.47,
+      "df": 5.9,
+      "p_value": 0.00002,
+      "cohens_d": 7.88
+    },
+    "median_mspt": {
+      "off_mean": 3.20,
+      "off_sd": 1.42,
+      "safe_mean": 3.24,
+      "safe_sd": 1.53,
+      "delta": 0.04,
+      "delta_pct": 1.25,
+      "welch_t": -0.04,
+      "df": 8.0,
+      "p_value": 0.966,
+      "cohens_d": -0.03
+    },
+    "p95_mspt": {
+      "off_mean": 3.84,
+      "off_sd": 1.55,
+      "safe_mean": 3.62,
+      "safe_sd": 1.61,
+      "delta": -0.22,
+      "delta_pct": -5.73,
+      "welch_t": 0.22,
+      "df": 8.0,
+      "p_value": 0.832,
+      "cohens_d": 0.14
+    },
+    "max_mspt": {
+      "off_mean": 8.16,
+      "off_sd": 2.27,
+      "safe_mean": 5.46,
+      "safe_sd": 2.13,
+      "delta": -2.70,
+      "delta_pct": -33.09,
+      "welch_t": 1.94,
+      "df": 8.0,
+      "p_value": 0.088,
+      "cohens_d": 1.22
+    }
+  },
+  "workload_2_mixed_200": {
+    "description": "40 Villagers + 160 Mixed Animals",
+    "repetitions": 5,
+    "push_entities_calls": {
+      "off_mean": 25926.00,
+      "off_sd": 3417.27,
+      "safe_mean": 11045.60,
+      "safe_sd": 1874.34,
+      "delta": -14880.40,
+      "delta_pct": -57.39,
+      "welch_t": 8.54,
+      "df": 6.2,
+      "p_value": 0.0001,
+      "cohens_d": 5.40
+    },
+    "push_entities_time_ms": {
+      "off_mean": 36.39,
+      "off_sd": 6.64,
+      "safe_mean": 15.07,
+      "safe_sd": 4.66,
+      "delta": -21.32,
+      "delta_pct": -58.59,
+      "welch_t": 5.87,
+      "df": 7.2,
+      "p_value": 0.0006,
+      "cohens_d": 3.71
+    },
+    "median_mspt": {
+      "off_mean": 6.00,
+      "off_sd": 0.98,
+      "safe_mean": 5.04,
+      "safe_sd": 1.05,
+      "delta": -0.96,
+      "delta_pct": -16.00,
+      "welch_t": 1.49,
+      "df": 8.0,
+      "p_value": 0.174,
+      "cohens_d": 0.94
+    },
+    "p95_mspt": {
+      "off_mean": 8.92,
+      "off_sd": 1.19,
+      "safe_mean": 7.70,
+      "safe_sd": 1.47,
+      "delta": -1.22,
+      "delta_pct": -13.68,
+      "welch_t": 1.44,
+      "df": 7.7,
+      "p_value": 0.189,
+      "cohens_d": 0.91
+    },
+    "max_mspt": {
+      "off_mean": 18.04,
+      "off_sd": 6.32,
+      "safe_mean": 25.84,
+      "safe_sd": 30.16,
+      "delta": 7.80,
+      "delta_pct": 43.24,
+      "welch_t": -0.57,
+      "df": 4.4,
+      "p_value": 0.598,
+      "cohens_d": -0.36
+    }
+  },
+  "outlier_investigation": {
+    "spike_mspt": 78.60,
+    "workload": "WL2_Mixed_200",
+    "preset": "SAFE",
+    "repetition": 4,
+    "timestamp": "18:24:35",
+    "root_cause": "World autosave on server thread (CommonHooks/WP: Gathered mod list to write to world save world_benchmark)",
+    "push_entities_max_ns": 1418,
+    "server_ai_step_max_ns": 1953100,
+    "entity_processing_attribution": false
+  },
+  "cramming_mechanics": {
+    "vanilla_probability": 0.25,
+    "vanilla_expected_interval_ticks": 4,
+    "safe_expected_interval_ticks": 8,
+    "enforceability_verified": true,
+    "test_stabilization_seconds": 3.0,
+    "test_final_count": 24
+  },
+  "allocation_profile": {
+    "direct_throttler_heap_allocations_bytes": 0,
+    "vanilla_array_list_allocations_per_second_250_mobs": 5000,
+    "safe_array_list_allocations_per_second_250_mobs": 2500,
+    "net_allocation_reduction_objects_per_sec": 2500
+  }
+}
